@@ -1,0 +1,12 @@
+spring:
+  rsocket:
+    server:
+      port: 7000
+      transport: websocket
+      ssl:
+        enabled: true
+        client-auth: none
+        protocol: "TLS"
+        key-store: "classpath:certs/core-olap.jks"
+        key-store-type: "JKS"
+        key-store-password: "123456"
